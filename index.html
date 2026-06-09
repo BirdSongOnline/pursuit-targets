@@ -4,7 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AITGS — Federal Civilian Account Strategy 2026</title>
-<link href="./Zickgraf_Federal Civilian Account Strategy_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -661,6 +661,207 @@ body {
 }
 .anc-text { font-size: 12px; color: #37474f; line-height: 1.6; }
 
+/* ── SECTION DIVIDER ── */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 32px 0 20px;
+}
+.section-divider-line {
+  flex: 1;
+  height: 1px;
+  background: #d0d9e4;
+}
+.section-divider-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ── POC TABLE ── */
+.poc-table { width: 100%; border-collapse: collapse; }
+.poc-table th {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0 12px 10px 0;
+  border-bottom: 2px solid var(--offwhite);
+}
+.poc-table td {
+  font-size: 12px;
+  color: #37474f;
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid var(--offwhite);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.poc-table tr:last-child td { border-bottom: none; }
+.poc-name { font-weight: 600; color: var(--navy); }
+.poc-role { font-size: 11px; color: var(--slate); margin-top: 1px; }
+.poc-why { font-size: 12px; color: #37474f; }
+.poc-reach {
+  font-size: 11px;
+  color: var(--blue);
+  font-weight: 500;
+}
+.poc-reach.green { color: #2e7d32; }
+.poc-reach.teal { color: #00695c; }
+.poc-reach.purple { color: #6a1b9a; }
+.poc-priority {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.poc-p1 { background: #fef3c7; color: #92400e; }
+.poc-p2 { background: var(--offwhite); color: var(--slate); }
+
+/* ── INTEL CARDS ── */
+.intel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.intel-card {
+  background: var(--offwhite);
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+.intel-card-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.intel-card-value {
+  font-size: 12px;
+  color: var(--navy);
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.intel-card-sub {
+  font-size: 11px;
+  color: var(--slate);
+  line-height: 1.5;
+}
+.intel-source {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-top: 5px;
+  display: block;
+}
+.intel-source.green { color: #2e7d32; }
+.intel-source.teal { color: #00695c; }
+.intel-source.purple { color: #6a1b9a; }
+
+/* ── MARKETING PLAYS ── */
+.play-list { display: flex; flex-direction: column; gap: 12px; }
+.play-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 4px;
+  background: var(--offwhite);
+}
+.play-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.play-body {}
+.play-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+.play-desc {
+  font-size: 12px;
+  color: var(--slate);
+  line-height: 1.5;
+}
+.play-tag {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-right: 4px;
+}
+.play-tag-blue { background: #e3f2fd; color: #1565c0; }
+.play-tag-green { background: #e8f5e9; color: #2e7d32; }
+.play-tag-teal { background: #e0f2f1; color: #00695c; }
+.play-tag-purple { background: #f3e5f5; color: #6a1b9a; }
+.play-tag-orange { background: #fff3e0; color: #e65100; }
+
+/* ── INFLUENCE CAMPAIGNS ── */
+.influence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.influence-item {
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--offwhite);
+  background: var(--white);
+}
+.influence-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.influence-icon { font-size: 16px; }
+.influence-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.influence-desc {
+  font-size: 12px;
+  color: var(--slate);
+  line-height: 1.55;
+}
+.influence-cta {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 6px;
+  color: var(--blue);
+}
+.influence-cta.green { color: #2e7d32; }
+.influence-cta.teal { color: #00695c; }
+.influence-cta.purple { color: #6a1b9a; }
+
 /* Footer */
 .footer {
   background: var(--navy);
@@ -1033,6 +1234,175 @@ body {
         <div class="anc-text">Interior and BIA COs are among the most ANC-aware in civilian government. Our identity isn't just a procurement mechanism here — it's a relationship asset. Tribal land consultation, trust management, and right-of-way permitting for Alaska Native communities are areas where our organizational history and shareholder base create authentic credibility that large SIs cannot replicate. Lead with this story.</div>
       </div>
     </div>
+
+    <!-- POC MAPPING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">POC Mapping</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Key Contacts to Develop</h3>
+      <table class="poc-table">
+        <thead><tr>
+          <th style="width:20%">Name / Role</th>
+          <th style="width:10%">Priority</th>
+          <th style="width:30%">Why They Matter</th>
+          <th style="width:40%">How to Reach</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="poc-name">Interior OCIO</div><div class="poc-role">Chief Information Officer, DOI</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">Sets IT modernization priorities and budget allocation across all bureaus. ArcticPass briefing at this level creates top-down pull into BLM and USFWS program offices.</td>
+            <td><div class="poc-reach green">SAM.gov agency contacts · Interior OCIO website · Industry Day events</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">BLM IT/IM Director</div><div class="poc-role">Bureau of Land Management</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">BLM is the highest-volume ROW and land use permitting bureau — the primary ArcticPass entry point. IM Director controls modernization budget and vendor relationships.</td>
+            <td><div class="poc-reach green">BLM.gov leadership directory · AFCEA Rocky Mountain · Federal IT conference circuit</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">BIA Office of IT</div><div class="poc-role">Bureau of Indian Affairs</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">ANC identity creates an authentic relationship entry unavailable to competitors. BIA tribal trust management and case system modernization is a natural ArcticPass + Microsoft platform play.</td>
+            <td><div class="poc-reach green">NCAI annual conference · BIA.gov · Direct outreach via ANC network connections</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">USFWS IT Program Manager</div><div class="poc-role">US Fish & Wildlife Service</div></td>
+            <td><span class="poc-priority poc-p2">Tier 2</span></td>
+            <td class="poc-why">ESA Section 7 consultation workflow is a strong ArcticPass fit. USFWS is a FAST-41 agency with active permitting modernization mandates.</td>
+            <td><div class="poc-reach green">USFWS.gov · FWS Industry Days · Permitting Innovation Center working groups</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">Contracting Officers</div><div class="poc-role">BLM / BIA / USFWS</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">COs at Interior bureaus are highly ANC-aware and experienced with sole-source structuring. Identifying 2–3 active COs with IT portfolios is the fastest path to an award.</td>
+            <td><div class="poc-reach green">USASpending.gov award history → CO names · SAM.gov contract notices · beta.SAM.gov</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INTELLIGENCE & ANALYTICS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Intelligence & Analytics</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Signals to Track</h3>
+      <div class="intel-grid">
+        <div class="intel-card">
+          <div class="intel-card-label">USASpending Watch</div>
+          <div class="intel-card-value">BLM + BIA 8(a) IT Awards</div>
+          <div class="intel-card-sub">Filter by NAICS 541511/518210, award type = sole source, agency = DOI. Identify COs, incumbents, and contract sizes to size opportunities.</div>
+          <span class="intel-source green">usaspending.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">SAM.gov Forecast</div>
+          <div class="intel-card-value">DOI IT Procurement Forecast</div>
+          <div class="intel-card-sub">Monitor DOI's annual procurement forecast for permitting IT and modernization programs. Flag any RFIs or sources sought in BLM or USFWS IT.</div>
+          <span class="intel-source green">sam.gov · acquisition.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">FAST-41 Dashboard</div>
+          <div class="intel-card-value">Active Permitting Projects</div>
+          <div class="intel-card-sub">Federal Permitting Dashboard tracks all FAST-41 projects by agency. BLM and USFWS project counts signal where IT modernization spend will follow.</div>
+          <span class="intel-source green">permitting.dashboard.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Budget Signal</div>
+          <div class="intel-card-value">DOI FY27 IT Appropriations</div>
+          <div class="intel-card-sub">Track Interior's annual IT budget request in the President's Budget. BLM and BIA IT line items are the funding sources for any ArcticPass award.</div>
+          <span class="intel-source green">budget.gov · DOI congressional justification</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Incumbent Watch</div>
+          <div class="intel-card-value">Current Permitting IT Vendors</div>
+          <div class="intel-card-sub">Identify who holds current BLM and USFWS permitting system contracts. Expiration dates are your window. Pull via USASpending contract search.</div>
+          <span class="intel-source green">usaspending.gov · fpds.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Congressional Signals</div>
+          <div class="intel-card-value">House Natural Resources / Senate Energy</div>
+          <div class="intel-card-sub">Monitor committee markups and permitting reform legislation. Congressional pressure on Interior IT modernization creates urgency at the CO level.</div>
+          <span class="intel-source green">congress.gov · committee hearing transcripts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TARGETED MARKETING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Targeted Marketing Plays</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Account-Specific Plays</h3>
+      <div class="play-list">
+        <div class="play-item">
+          <div class="play-icon">📋</div>
+          <div class="play-body">
+            <div class="play-title">ArcticPass FAST-41 Capability Brief</div>
+            <div class="play-desc">A 2-page leave-behind specifically framed around Interior's FAST-41 obligations and executive permitting mandates. Maps ArcticPass features directly to CEQ Permitting Technology Action Plan requirements. Designed for OCIO and program office audiences, not technical staff.</div>
+            <span class="play-tag play-tag-green">Leave-Behind</span><span class="play-tag play-tag-orange">ArcticPass</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🤝</div>
+          <div class="play-body">
+            <div class="play-title">Microsoft Co-Sell Motion — Azure for Public Lands</div>
+            <div class="play-desc">Engage Microsoft's federal civilian account team to co-position ArcticPass as a validated Azure + Power Platform solution for Interior. Microsoft has existing relationships at DOI OCIO and can open doors that cold outreach cannot. Position us as their ANC 8(a) delivery partner for permitting modernization.</div>
+            <span class="play-tag play-tag-blue">Co-Sell</span><span class="play-tag play-tag-green">Microsoft Partner</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">📝</div>
+          <div class="play-body">
+            <div class="play-title">RFI / Sources Sought Response Template</div>
+            <div class="play-desc">Pre-build a response template for any Interior IT RFI or sources sought that references permitting modernization, FAST-41, or digital services. Respond to every relevant notice within 5 business days to build name recognition with COs before a solicitation exists.</div>
+            <span class="play-tag play-tag-orange">SAM.gov</span><span class="play-tag play-tag-green">Brand Building</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🏛️</div>
+          <div class="play-body">
+            <div class="play-title">BIA Tribal IT Story — ANC-Specific Pitch</div>
+            <div class="play-desc">A dedicated narrative for BIA conversations that leads with AITGS's ANC identity, shareholder communities, and authentic tribal technology mission — not just capability. This is not a standard capability brief. It's a relationship document that establishes who we are before we talk about what we sell.</div>
+            <span class="play-tag play-tag-green">ANC Identity</span><span class="play-tag play-tag-green">Relationship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFLUENCE CAMPAIGNS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Influence Campaigns</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Channels & Campaigns</h3>
+      <div class="influence-grid">
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏔️</div><div class="influence-title">NCAI Annual Conference</div></div>
+          <div class="influence-desc">National Congress of American Indians is the primary tribal advocacy forum. BIA leadership and Interior tribal program staff attend. AITGS presence here reinforces ANC identity and opens BIA relationship conversations outside of procurement contexts.</div>
+          <div class="influence-cta green">→ Attend + exhibit annually. Target BIA IT and tribal program contacts.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">⚡</div><div class="influence-title">Permitting Innovation Center</div></div>
+          <div class="influence-desc">CEQ's cross-agency permitting modernization body. Responding to RFIs, attending working groups, and submitting ArcticPass use cases creates visibility across all FAST-41 agencies simultaneously — including BLM, USFWS, and Bureau of Reclamation.</div>
+          <div class="influence-cta green">→ Submit ArcticPass as a technology solution to next PIC RFI.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🖥️</div><div class="influence-title">AFCEA Bethesda / Rocky Mountain</div></div>
+          <div class="influence-desc">AFCEA chapters attract Interior OCIO and bureau IT leadership. Chapter events and industry days are low-barrier entry points for capability conversations before formal procurement begins.</div>
+          <div class="influence-cta green">→ Sponsor or present at relevant AFCEA chapter events.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏛️</div><div class="influence-title">Senate Energy & Natural Resources Committee</div></div>
+          <div class="influence-desc">Staff members on the Senate ENR Committee influence Interior IT appropriations and permitting reform legislation. A brief on ArcticPass and AITGS's ANC identity with a relevant staffer creates Hill-level awareness that filters down to agency leadership.</div>
+          <div class="influence-cta green">→ Schedule 1–2 Hill staff briefings per year with ANC identity framing.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🤝</div><div class="influence-title">Alaska Federation of Natives (AFN)</div></div>
+          <div class="influence-desc">AFN's annual convention brings together Alaska Native leadership and federal agency officials including Interior and BIA. AITGS presence reinforces authentic mission alignment and creates informal relationship entry with federal staff outside of procurement settings.</div>
+          <div class="influence-cta green">→ Annual attendance. Position AITGS as technology arm of ANC community.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">📣</div><div class="influence-title">LinkedIn Thought Leadership</div></div>
+          <div class="influence-desc">Publish short-form content on permitting modernization, FAST-41 implementation, and ANC technology capability targeting Interior OCIO and program manager audiences. Consistent presence over 6–12 months builds name recognition before outreach begins.</div>
+          <div class="influence-cta green">→ 2x/month posts. Tag Interior programs, FAST-41, and Microsoft partner themes.</div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /interior panel -->
 
 
@@ -1201,6 +1571,175 @@ body {
         <div class="anc-text">Treasury doesn't need ArcticPass — it needs a credible Microsoft platform modernization partner with a fast procurement path. That's exactly what our 8(a) sole-source + MAS 518210C combination delivers. The pitch here is speed and capability, not permitting expertise. A CO who has $50M in cloud migration budget and needs to obligate it before fiscal year end will find our sole-source path highly attractive.</div>
       </div>
     </div>
+
+    <!-- POC MAPPING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">POC Mapping</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Key Contacts to Develop</h3>
+      <table class="poc-table">
+        <thead><tr>
+          <th style="width:20%">Name / Role</th>
+          <th style="width:10%">Priority</th>
+          <th style="width:30%">Why They Matter</th>
+          <th style="width:40%">How to Reach</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="poc-name">IRS Chief Information Officer</div><div class="poc-role">IRS OCIO</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">Controls the IRS IT Modernization Plan budget and vendor strategy. A briefing at OCIO level creates pull into program-level procurement conversations. IRS OCIO is the most important single contact in this account.</td>
+            <td><div class="poc-reach">IRS.gov leadership · ACT-IAC events · FedScoop summits · MeriTalk cloud forums</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">IRS IT Modernization Program Managers</div><div class="poc-role">IRS Enterprise Modernization</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">Program managers executing specific IRS IT Modernization Plan workstreams are the buyers closest to the money. Identify the Azure cloud migration and M365 workstream leads.</td>
+            <td><div class="poc-reach">IRS Congressional justification docs (name programs) · LinkedIn · ACT-IAC working groups</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">IRS Contracting Officers</div><div class="poc-role">IRS Procurement</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">IRS COs have extensive 8(a) and MAS experience. Mining USASpending for IRS cloud awards reveals which COs are active in this space — these are warm targets.</td>
+            <td><div class="poc-reach">USASpending.gov — filter IRS + NAICS 518210 + 8(a) sole source → CO names</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">FinCEN IT Director</div><div class="poc-role">Financial Crimes Enforcement Network</div></td>
+            <td><span class="poc-priority poc-p2">Tier 2</span></td>
+            <td class="poc-why">FinCEN is smaller and more accessible than IRS HQ — a faster path to a first award under the Treasury umbrella. Data modernization and analytics needs map to our Power BI and Azure capabilities.</td>
+            <td><div class="poc-reach">FinCEN.gov · Treasury IT conferences · SAM.gov sources sought responses</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">Bureau of Fiscal Service CIO</div><div class="poc-role">Treasury Fiscal Service</div></td>
+            <td><span class="poc-priority poc-p2">Tier 2</span></td>
+            <td class="poc-why">Fiscal Service has active ERP and financial system modernization programs. Another accessible Treasury sub-agency entry point that builds our reference base within the department.</td>
+            <td><div class="poc-reach">fiscal.treasury.gov · Treasury OCIO events · FedScoop Treasury coverage</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INTELLIGENCE & ANALYTICS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Intelligence & Analytics</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Signals to Track</h3>
+      <div class="intel-grid">
+        <div class="intel-card">
+          <div class="intel-card-label">USASpending Watch</div>
+          <div class="intel-card-value">IRS 8(a) Cloud Awards</div>
+          <div class="intel-card-sub">Filter by NAICS 518210, agency = Treasury/IRS, award type = sole source. Map active COs, incumbents, and contract durations to find expiring vehicles.</div>
+          <span class="intel-source">usaspending.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">IRS IT Modernization Plan</div>
+          <div class="intel-card-value">Active Workstreams</div>
+          <div class="intel-card-sub">Public IRS IT Modernization Plan identifies specific programs, funding levels, and timelines. Map our capabilities to named workstreams — Azure, M365, data modernization.</div>
+          <span class="intel-source">irs.gov/modernization · GAO IRS IT reports</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Budget Signal</div>
+          <div class="intel-card-value">$6.2B FY27 Request (+48%)</div>
+          <div class="intel-card-sub">Treasury's FY27 IT budget is the fastest-growing in civilian government. Monitor appropriations markup for specific IRS cloud and modernization line items.</div>
+          <span class="intel-source">budget.gov · Treasury congressional justification</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">SAM.gov Forecast</div>
+          <div class="intel-card-value">Treasury IT Procurement Notices</div>
+          <div class="intel-card-sub">Set SAM.gov alerts for IRS and Treasury IT solicitations, sources sought, and RFIs in NAICS 518210 and 541512. Respond to every relevant notice quickly.</div>
+          <span class="intel-source">sam.gov · beta.sam.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Congressional Watch</div>
+          <div class="intel-card-value">Senate Finance / House Ways & Means</div>
+          <div class="intel-card-sub">IRS modernization funding is highly visible on the Hill. Committee hearings and IRS oversight reports identify specific IT pain points that become procurement drivers.</div>
+          <span class="intel-source">congress.gov · IRS oversight hearings</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Incumbent Watch</div>
+          <div class="intel-card-value">Current IRS Cloud Vendors</div>
+          <div class="intel-card-sub">Identify current Azure and M365 implementers at IRS via USASpending. Note contract end dates — transition periods are our entry window for a sole-source task order.</div>
+          <span class="intel-source">usaspending.gov · fpds.gov</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TARGETED MARKETING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Targeted Marketing Plays</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Account-Specific Plays</h3>
+      <div class="play-list">
+        <div class="play-item">
+          <div class="play-icon">☁️</div>
+          <div class="play-body">
+            <div class="play-title">Azure Migration Capability Brief — IRS-Specific</div>
+            <div class="play-desc">A 2-page brief framed entirely around IRS IT Modernization Plan language. References specific IRS workstreams (TREAS/IRS cloud migration, mainframe decommissioning) and maps our 518210C SIN, Azure credentials, and ANC sole-source path to each. Built for OCIO and CO audiences.</div>
+            <span class="play-tag play-tag-blue">Leave-Behind</span><span class="play-tag play-tag-blue">IRS-Specific</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🤝</div>
+          <div class="play-body">
+            <div class="play-title">Microsoft Co-Sell — IRS Azure Modernization</div>
+            <div class="play-desc">Microsoft has deep existing relationships at IRS OCIO and has been a primary partner in IRS cloud migration. Engage Microsoft's federal civilian team to position AITGS as their preferred ANC 8(a) delivery partner for IRS Azure workstreams. This is our most powerful door-opener at Treasury.</div>
+            <span class="play-tag play-tag-blue">Co-Sell</span><span class="play-tag play-tag-blue">Microsoft Partner</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">⚡</div>
+          <div class="play-body">
+            <div class="play-title">End-of-FY Sole-Source Readiness Campaign</div>
+            <div class="play-desc">IRS COs face significant year-end (Sept 30) spending pressure. Develop a targeted outreach sequence in July–August each year positioning AITGS as a ready, sole-source partner for COs who need to obligate cloud migration budget quickly. Emphasize our 8(a) ANC path as the fastest compliant award mechanism.</div>
+            <span class="play-tag play-tag-orange">Seasonal</span><span class="play-tag play-tag-blue">CO-Targeted</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">📊</div>
+          <div class="play-body">
+            <div class="play-title">FinCEN / Fiscal Service Warm Outreach</div>
+            <div class="play-desc">Position FinCEN and Bureau of Fiscal Service as fast-mover sub-agency targets. Smaller teams, fewer incumbents, and genuine data modernization needs. A first award here builds our Treasury reference while IRS relationships mature. Tailor outreach to each agency's specific IT priorities.</div>
+            <span class="play-tag play-tag-blue">Sub-Agency</span><span class="play-tag play-tag-orange">First Win</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFLUENCE CAMPAIGNS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Influence Campaigns</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Channels & Campaigns</h3>
+      <div class="influence-grid">
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🎯</div><div class="influence-title">ACT-IAC</div></div>
+          <div class="influence-desc">American Council for Technology & Industry Advisory Council is the primary government-industry collaboration forum. IRS and Treasury IT leadership are active participants. Working group membership creates informal access well before any RFP drops.</div>
+          <div class="influence-cta">→ Join ACT-IAC. Participate in cloud and modernization working groups.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">📰</div><div class="influence-title">FedScoop / MeriTalk</div></div>
+          <div class="influence-desc">FedScoop and MeriTalk reach IRS OCIO and program manager audiences with cloud and modernization content. Sponsoring a MeriTalk cloud study or contributing a bylined article positions AITGS as a thought leader in the IRS modernization conversation.</div>
+          <div class="influence-cta">→ Target a MeriTalk cloud survey sponsorship or FedScoop contributed piece.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏛️</div><div class="influence-title">Senate Finance Committee Staff</div></div>
+          <div class="influence-desc">Senate Finance Committee staff are deeply engaged in IRS modernization oversight and funding. A Hill briefing on AITGS's ANC identity and Microsoft modernization capabilities creates awareness that influences both agency leadership and procurement culture.</div>
+          <div class="influence-cta">→ 1 Hill briefing annually. Lead with ANC identity + IRS modernization fit.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">☁️</div><div class="influence-title">Microsoft Federal Partner Events</div></div>
+          <div class="influence-desc">Microsoft's federal partner summits and Treasury-specific customer events provide direct access to IRS OCIO and program staff in a relationship-building context. As a Microsoft partner, AITGS should be present and visible at every relevant Microsoft federal event.</div>
+          <div class="influence-cta">→ Attend Microsoft Federal Forum and Treasury-focused Microsoft events.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">📣</div><div class="influence-title">LinkedIn — IRS Modernization Positioning</div></div>
+          <div class="influence-desc">Publish targeted content on legacy modernization, Azure migration patterns, and M365 deployment for large government agencies. Tag IRS modernization, Treasury IT, and Microsoft federal themes to build awareness among CO and program manager audiences over time.</div>
+          <div class="influence-cta">→ 2x/month posts. Reference IRS Modernization Plan milestones publicly.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🎤</div><div class="influence-title">GITEC / FOSE / Exchequer Forum</div></div>
+          <div class="influence-desc">Treasury-focused IT conferences like the Exchequer Forum (Treasury-specific) and broader government IT events like GITEC attract IRS and Treasury IT staff. Speaking opportunities or exhibition presence builds name recognition with the specific audience we need to reach.</div>
+          <div class="influence-cta">→ Submit speaking proposals to Treasury-focused conference tracks.</div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /treasury panel -->
 
 
@@ -1369,6 +1908,175 @@ body {
         <div class="anc-text">Unlike Treasury (large incumbent-dominated) or Interior (relationship-intensive), EPA's permitting offices have active, funded modernization mandates and COs with real discretion to use 8(a) vehicles for the right solution. ArcticPass fits EPA's workflow profile more precisely than any other target — intake-heavy, multi-stakeholder, audit-sensitive, compliance-driven. This should be our fastest path to a first ArcticPass win.</div>
       </div>
     </div>
+
+    <!-- POC MAPPING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">POC Mapping</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Key Contacts to Develop</h3>
+      <table class="poc-table">
+        <thead><tr>
+          <th style="width:20%">Name / Role</th>
+          <th style="width:10%">Priority</th>
+          <th style="width:30%">Why They Matter</th>
+          <th style="width:40%">How to Reach</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="poc-name">EPA Chief Information Officer</div><div class="poc-role">EPA OCIO</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">EPA OCIO sets IT modernization direction and controls cross-office IT budget. FAST-41 compliance and OEI data modernization both run through this office. Top-down awareness of ArcticPass creates pull into permitting program offices.</td>
+            <td><div class="poc-reach teal">EPA.gov/ocio · ACT-IAC · AFCEA Bethesda · FedScoop events</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">Office of Water IT Director</div><div class="poc-role">EPA Office of Water</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">NPDES permit volume makes Office of Water the primary ArcticPass entry point at EPA. The IT director here controls the modernization budget for the highest-priority permitting workflow in our target set.</td>
+            <td><div class="poc-reach teal">EPA.gov/water directory · Water sector IT conferences · NACWA technology forums</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">Office of Air IT Program Manager</div><div class="poc-role">EPA Office of Air and Radiation</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">Clean Air Act permitting is a second high-volume entry point for ArcticPass. Air and Water together represent the two largest permit program modernization opportunities in the federal government.</td>
+            <td><div class="poc-reach teal">EPA.gov/air · Clean Air Act compliance forums · SAM.gov sources sought responses</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">OEI Data & Analytics Lead</div><div class="poc-role">EPA Office of Environmental Information</div></td>
+            <td><span class="poc-priority poc-p2">Tier 2</span></td>
+            <td class="poc-why">OEI is actively modernizing EPA's data infrastructure on Microsoft-aligned platforms. This is our expansion path beyond ArcticPass — Power BI, Azure, and compliance analytics for EPA's environmental data systems.</td>
+            <td><div class="poc-reach teal">EPA.gov/oei · Data.gov EPA contacts · Microsoft federal OEI references</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">EPA Contracting Officers</div><div class="poc-role">EPA Office of Acquisition Management</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">EPA has a strong 8(a) procurement track record. COs with active IT portfolios in Office of Water and OEI are primary targets. USASpending history reveals names and patterns.</td>
+            <td><div class="poc-reach teal">USASpending.gov — filter EPA + NAICS 541511/518210 + 8(a) sole source → CO names</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INTELLIGENCE & ANALYTICS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Intelligence & Analytics</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Signals to Track</h3>
+      <div class="intel-grid">
+        <div class="intel-card">
+          <div class="intel-card-label">USASpending Watch</div>
+          <div class="intel-card-value">EPA 8(a) IT Awards</div>
+          <div class="intel-card-sub">Filter by NAICS 541511/518210, agency = EPA, award type = sole source. Map active COs, incumbents, and contract durations — expiring contracts are our entry window.</div>
+          <span class="intel-source teal">usaspending.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">SAM.gov Forecast</div>
+          <div class="intel-card-value">EPA Permitting IT Notices</div>
+          <div class="intel-card-sub">Set alerts for EPA sources sought and RFIs in Office of Water and Office of Air. NPDES modernization notices in particular are high-priority triggers for ArcticPass outreach.</div>
+          <span class="intel-source teal">sam.gov · EPA eSAM forecast</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">FAST-41 Dashboard</div>
+          <div class="intel-card-value">EPA Permitting Project Load</div>
+          <div class="intel-card-sub">Monitor FAST-41 dashboard for EPA-affiliated projects. High project counts in specific programs signal where IT modernization budget will be directed and justify ArcticPass urgency in outreach.</div>
+          <span class="intel-source teal">permitting.dashboard.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">NPDES Program Data</div>
+          <div class="intel-card-value">Permit Volume & System Age</div>
+          <div class="intel-card-sub">EPA's ECHO database shows NPDES permit volumes by state and program. High volumes + known legacy system age (ICIS-NPDES) = modernization urgency. Use as evidence in capability briefs.</div>
+          <span class="intel-source teal">echo.epa.gov · EPA ICIS documentation</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Budget Signal</div>
+          <div class="intel-card-value">EPA IT Appropriations</div>
+          <div class="intel-card-sub">Track EPA's annual IT budget in the President's Budget. OEI and permitting program IT line items are the funding sources for any ArcticPass award. Monitor for increases tied to permitting mandates.</div>
+          <span class="intel-source teal">budget.gov · EPA congressional justification</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Congressional Watch</div>
+          <div class="intel-card-value">Senate EPW / House E&C</div>
+          <div class="intel-card-sub">Senate Environment & Public Works and House Energy & Commerce committees drive EPA IT appropriations and permitting reform mandates. Committee markup language often creates procurement urgency at program level.</div>
+          <span class="intel-source teal">congress.gov · EPW committee hearings</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TARGETED MARKETING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Targeted Marketing Plays</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Account-Specific Plays</h3>
+      <div class="play-list">
+        <div class="play-item">
+          <div class="play-icon">💧</div>
+          <div class="play-body">
+            <div class="play-title">ArcticPass NPDES Workflow Brief</div>
+            <div class="play-desc">A targeted 2-page capability brief framed entirely around NPDES permit modernization — intake, multi-agency coordination (EPA/states/tribes), compliance tracking, and public reporting. References ICIS-NPDES legacy system pain points and maps ArcticPass features to each. Office of Water program manager audience.</div>
+            <span class="play-tag play-tag-teal">Leave-Behind</span><span class="play-tag play-tag-orange">ArcticPass</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🌬️</div>
+          <div class="play-body">
+            <div class="play-title">ArcticPass Clean Air Act Permit Brief</div>
+            <div class="play-desc">Mirror of the NPDES brief, framed for Office of Air and Radiation. Clean Air Act Title V permitting has similar workflow characteristics to NPDES — high volume, multi-stakeholder, legacy system dependent. A separate brief for this audience demonstrates depth of EPA understanding.</div>
+            <span class="play-tag play-tag-teal">Leave-Behind</span><span class="play-tag play-tag-orange">ArcticPass</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🤝</div>
+          <div class="play-body">
+            <div class="play-title">Microsoft Co-Sell — EPA OEI Modernization</div>
+            <div class="play-desc">Engage Microsoft's EPA account team to co-position AITGS as their ANC 8(a) delivery partner for OEI data modernization. Microsoft has existing OEI relationships and can introduce us in a context where our Azure and Power BI capabilities lead, not ArcticPass. Establishes the expansion path from day one.</div>
+            <span class="play-tag play-tag-blue">Co-Sell</span><span class="play-tag play-tag-teal">OEI Expansion</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🏛️</div>
+          <div class="play-body">
+            <div class="play-title">Tribal Environmental Program Outreach</div>
+            <div class="play-desc">EPA's Office of International and Tribal Affairs (OITA) manages tribal environmental program grants and technical assistance. Our ANC identity creates a distinct, non-procurement relationship entry here that builds EPA-wide credibility and opens doors in permitting program offices through an authentic mission channel.</div>
+            <span class="play-tag play-tag-teal">ANC Identity</span><span class="play-tag play-tag-teal">Relationship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFLUENCE CAMPAIGNS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Influence Campaigns</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Channels & Campaigns</h3>
+      <div class="influence-grid">
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">⚡</div><div class="influence-title">Permitting Innovation Center</div></div>
+          <div class="influence-desc">EPA is a core FAST-41 member agency. The CEQ Permitting Innovation Center (PIC) coordinates cross-agency permitting technology. Submitting ArcticPass as a PIC technology solution creates visibility with EPA program staff and generates inbound interest from the program level up.</div>
+          <div class="influence-cta teal">→ Submit ArcticPass to next PIC technology RFI. Attend PIC working groups.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">💧</div><div class="influence-title">NACWA / WEF Technology Forums</div></div>
+          <div class="influence-desc">National Association of Clean Water Agencies and Water Environment Federation conferences attract EPA Office of Water staff and NPDES program managers. These are the exact audiences who feel ICIS-NPDES pain daily and will champion modernization internally.</div>
+          <div class="influence-cta teal">→ Present ArcticPass at NACWA or WEF technology track sessions.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏔️</div><div class="influence-title">Tribal Environmental Programs</div></div>
+          <div class="influence-desc">EPA funds tribal environmental programs across Alaska and the lower 48. AITGS's ANC identity gives us authentic relationships in these programs that organically connect to EPA's tribal affairs office — a back-channel to EPA program leadership that large SIs cannot replicate.</div>
+          <div class="influence-cta teal">→ Engage EPA tribal environmental program contacts through AFN and NCAI.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏛️</div><div class="influence-title">Senate EPW Committee Staff</div></div>
+          <div class="influence-desc">Senate Environment & Public Works staff drive EPA appropriations and permitting reform mandates. A briefing framing ArcticPass as a compliance tool for permitting reform legislation creates Hill-level awareness that filters down to EPA program leadership and CO discretion.</div>
+          <div class="influence-cta teal">→ 1 Hill briefing annually targeting EPW staff. Frame around permitting reform.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">📣</div><div class="influence-title">LinkedIn — Environmental Permitting Modernization</div></div>
+          <div class="influence-desc">Publish content on NPDES modernization, Clean Air Act permitting technology, and FAST-41 compliance targeting EPA program manager and OCIO audiences. Consistent presence builds name recognition among the specific decision-makers we need before any formal outreach begins.</div>
+          <div class="influence-cta teal">→ 2x/month posts. Tag EPA, NPDES, Clean Water Act, and FAST-41 themes.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🌐</div><div class="influence-title">ECOS — Environmental Commissioners</div></div>
+          <div class="influence-desc">Environmental Council of the States connects state environmental agency commissioners and EPA. State permitting agencies are ArcticPass customers and EPA partners — ECOS presence builds a state-level reference base that creates credibility in EPA program office conversations.</div>
+          <div class="influence-cta teal">→ Engage ECOS technology forums as a path to both state and EPA relationships.</div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /epa panel -->
 
 
@@ -1537,6 +2245,175 @@ body {
         <div class="anc-text">IHS serves the communities our shareholders are from. Rural Alaska healthcare access is not an abstract market opportunity for AITGS — it is a lived reality for our people. When we walk into IHS, we are not a vendor pitching a solution. We are an Alaska Native organization that has built Microsoft-platform technology and wants to apply it to a problem our shareholders face every day. That story cannot be purchased, manufactured, or replicated by any competitor. Lead with it, every time.</div>
       </div>
     </div>
+
+    <!-- POC MAPPING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">POC Mapping</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Key Contacts to Develop</h3>
+      <table class="poc-table">
+        <thead><tr>
+          <th style="width:20%">Name / Role</th>
+          <th style="width:10%">Priority</th>
+          <th style="width:30%">Why They Matter</th>
+          <th style="width:40%">How to Reach</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="poc-name">Alaska Area Native Health Service Director</div><div class="poc-role">IHS Alaska Area</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">Our most authentic connection point in the entire portfolio. Alaska Area NHS serves the communities our shareholders come from. This is a relationship conversation before it is ever a procurement conversation — and that's exactly the right sequence.</td>
+            <td><div class="poc-reach purple">Alaska Area NHS website · AFN annual convention · ANTHC connections · ANC network</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">IHS Chief Information Officer</div><div class="poc-role">IHS Office of Information Technology</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">IHS OIT controls IT modernization strategy and budget across all Area Offices. A briefing here establishes AITGS as a known, mission-aligned Microsoft partner before ArcticREACH is formally positioned.</td>
+            <td><div class="poc-reach purple">IHS.gov/oitlists · HIMSS federal health IT track · HHS IT conferences</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">IHS Area IT Directors</div><div class="poc-role">Multiple Area Offices</div></td>
+            <td><span class="poc-priority poc-p2">Tier 2</span></td>
+            <td class="poc-why">Area Office IT Directors make local IT modernization decisions and have direct knowledge of clinical and care coordination pain points. Discovery conversations at this level will directly inform the ArcticREACH solution concept.</td>
+            <td><div class="poc-reach purple">IHS area office directories · IHS informatics conferences · Tribal health IT forums</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">ANTHC Technology Leadership</div><div class="poc-role">Alaska Native Tribal Health Consortium</div></td>
+            <td><span class="poc-priority poc-p1">Tier 1</span></td>
+            <td class="poc-why">ANTHC is the largest tribal health organization in Alaska and a major IHS partner. Their technology leadership understands rural Alaska health IT gaps better than anyone — and they are a natural ArcticREACH design partner and reference customer.</td>
+            <td><div class="poc-reach purple">ANTHC.org · Alaska Area NHS connections · AFN · Direct ANC network outreach</div></td>
+          </tr>
+          <tr>
+            <td><div class="poc-name">IHS Contracting Officers</div><div class="poc-role">IHS Division of Contracts</div></td>
+            <td><span class="poc-priority poc-p2">Tier 2</span></td>
+            <td class="poc-why">IHS COs have strong familiarity with ANC 8(a) vehicles given the agency's mission alignment with tribal entities. Identifying COs with active IT portfolios in Alaska Area and HQ is a near-term action once relationships are established.</td>
+            <td><div class="poc-reach purple">USASpending.gov — filter IHS + NAICS 541511 + sole source → CO names</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INTELLIGENCE & ANALYTICS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Intelligence & Analytics</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Signals to Track</h3>
+      <div class="intel-grid">
+        <div class="intel-card">
+          <div class="intel-card-label">USASpending Watch</div>
+          <div class="intel-card-value">IHS 8(a) IT Awards</div>
+          <div class="intel-card-sub">Filter by NAICS 541511/518210, agency = IHS, award type = sole source. Map COs, incumbents, and contract durations. IHS has historically favored ANC 8(a) vehicles — understand the existing patterns.</div>
+          <span class="intel-source purple">usaspending.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">IHS IT Roadmap</div>
+          <div class="intel-card-value">EHR Modernization & OIT Plans</div>
+          <div class="intel-card-sub">IHS is implementing a new EHR system and modernizing supporting IT infrastructure. Monitor IHS OIT strategic plan publications and congressional justifications for near-term IT priorities and budget allocations.</div>
+          <span class="intel-source purple">ihs.gov/oit · IHS congressional justification</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Budget Signal</div>
+          <div class="intel-card-value">IHS IT Appropriations</div>
+          <div class="intel-card-sub">Track IHS IT budget in the President's Budget and Indian Health Service congressional justification. Health IT modernization line items are the funding source for near-term awards and ArcticREACH positioning.</div>
+          <span class="intel-source purple">budget.gov · HHS congressional justification</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">HRSA Rural Health</div>
+          <div class="intel-card-value">Rural Health IT Grant Programs</div>
+          <div class="intel-card-sub">HRSA funds rural health IT through telehealth and rural health programs. Monitor HRSA grant announcements — these create funded demand for ArcticREACH-type solutions at RHCs and CAHs that may precede direct IHS contracts.</div>
+          <span class="intel-source purple">hrsa.gov · rural health IT grants</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">SAM.gov Forecast</div>
+          <div class="intel-card-value">IHS IT Procurement Notices</div>
+          <div class="intel-card-sub">Set alerts for IHS sources sought and RFIs in health IT, care coordination, and clinical systems. Any IHS IT modernization notice is a potential near-term ArcticPass-adjacent or ArcticREACH opportunity.</div>
+          <span class="intel-source purple">sam.gov · beta.sam.gov</span>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-label">Congressional Watch</div>
+          <div class="intel-card-value">Senate Indian Affairs Committee</div>
+          <div class="intel-card-sub">Senate Indian Affairs Committee drives IHS appropriations and tribal health IT policy. Hearings on rural health access and IHS modernization create political urgency that translates to procurement action at the agency level.</div>
+          <span class="intel-source purple">congress.gov · Senate Indian Affairs hearings</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TARGETED MARKETING -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Targeted Marketing Plays</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Account-Specific Plays</h3>
+      <div class="play-list">
+        <div class="play-item">
+          <div class="play-icon">🏥</div>
+          <div class="play-body">
+            <div class="play-title">ArcticREACH Discovery Brief</div>
+            <div class="play-desc">A 1-page internal concept brief for IHS and ANTHC conversations that introduces ArcticREACH as a concept under development — and explicitly invites customer input. Framing it as "we're building this with you, not for you" creates authentic co-creation relationships and generates the discovery insights we need to shape the solution correctly.</div>
+            <span class="play-tag play-tag-purple">Discovery</span><span class="play-tag play-tag-purple">ArcticREACH</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🌐</div>
+          <div class="play-body">
+            <div class="play-title">Microsoft + AITGS Rural Health IT Joint Positioning</div>
+            <div class="play-desc">Engage Microsoft's HHS/IHS account team to co-position AITGS as their ANC 8(a) delivery partner for rural health IT modernization. Microsoft has existing IHS relationships and active HHS healthcare cloud programs. Being introduced through Microsoft elevates AITGS from cold outreach to trusted partner immediately.</div>
+            <span class="play-tag play-tag-blue">Co-Sell</span><span class="play-tag play-tag-purple">Microsoft Partner</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">🏔️</div>
+          <div class="play-body">
+            <div class="play-title">ANC Mission Story — IHS-Specific Narrative</div>
+            <div class="play-desc">Develop a distinct relationship document for IHS that leads entirely with AITGS's ANC identity, shareholder communities, and the rural Alaska healthcare access reality our people live. Include testimonials or perspectives from AITGS leadership or shareholders on what IHS means to our communities. This is not marketing — it is an authentic statement of who we are and why this account matters to us.</div>
+            <span class="play-tag play-tag-purple">ANC Identity</span><span class="play-tag play-tag-purple">Mission</span>
+          </div>
+        </div>
+        <div class="play-item">
+          <div class="play-icon">⚡</div>
+          <div class="play-body">
+            <div class="play-title">Near-Term ArcticPass-Adjacent Win</div>
+            <div class="play-desc">While ArcticREACH matures, identify a near-term IT modernization need at an IHS area office — tribal consultation workflow, environmental health permitting, or care coordination system modernization — and pursue it as an 8(a) sole-source. This builds our IHS reference, funds discovery conversations, and establishes us as a known partner before ArcticREACH is formally positioned.</div>
+            <span class="play-tag play-tag-orange">First Win</span><span class="play-tag play-tag-purple">ArcticPass</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFLUENCE CAMPAIGNS -->
+    <div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-label">Influence Campaigns</div><div class="section-divider-line"></div></div>
+    <div class="panel-card">
+      <h3>Channels & Campaigns</h3>
+      <div class="influence-grid">
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏔️</div><div class="influence-title">Alaska Federation of Natives (AFN)</div></div>
+          <div class="influence-desc">AFN's annual convention is the most important gathering of Alaska Native leadership in the country. IHS Alaska Area staff, ANTHC leadership, and tribal health program directors all attend. AITGS presence here is non-negotiable — this is our home ground and the most authentic relationship-building context available to us.</div>
+          <div class="influence-cta purple">→ Annual attendance + presence. Lead with shareholder story, not vendor pitch.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏥</div><div class="influence-title">NCAI Health Committee</div></div>
+          <div class="influence-desc">NCAI's health committee engages IHS policy and program leadership on tribal health priorities. Participation here connects AITGS to IHS leadership in a policy advocacy context — building relationships that exist entirely outside procurement channels and create trust before any sales conversation begins.</div>
+          <div class="influence-cta purple">→ Engage NCAI health committee. Participate in IHS policy sessions.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">💻</div><div class="influence-title">HIMSS Federal Health IT Track</div></div>
+          <div class="influence-desc">HIMSS attracts IHS CIO and OIT leadership alongside broader federal health IT decision-makers. The federal health IT track is a focused context for capability conversations with IHS technology leadership — and a venue where ArcticREACH can be previewed as a concept in development.</div>
+          <div class="influence-cta purple">→ Attend HIMSS federal track. Target IHS OIT and ANTHC technology contacts.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🏛️</div><div class="influence-title">Senate Indian Affairs Committee Staff</div></div>
+          <div class="influence-desc">Senate Indian Affairs Committee drives IHS funding and tribal health policy. A briefing on AITGS's ANC identity and ArcticREACH concept creates Hill-level awareness that influences IHS leadership priorities and signals our mission alignment to the people who fund the agency.</div>
+          <div class="influence-cta purple">→ Annual Hill briefing. Frame around rural Alaska health access and ANC mission.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">🌐</div><div class="influence-title">ANTHC Partnership</div></div>
+          <div class="influence-desc">Alaska Native Tribal Health Consortium is the ideal ArcticREACH design partner — they understand the problem, have deep IHS relationships, and carry authentic credibility across Alaska Native health programs. A formal co-development or advisory relationship with ANTHC would accelerate ArcticREACH and create a reference customer at launch.</div>
+          <div class="influence-cta purple">→ Initiate ANTHC partnership conversation. Explore co-design relationship for ArcticREACH.</div>
+        </div>
+        <div class="influence-item">
+          <div class="influence-header"><div class="influence-icon">📣</div><div class="influence-title">LinkedIn — Rural Health IT Positioning</div></div>
+          <div class="influence-desc">Publish content on rural health IT access, tribal health technology gaps, and Microsoft platform solutions for underserved communities. This builds AITGS's thought leadership with IHS, HRSA, and tribal health audiences over the 12–18 month runway to ArcticREACH launch.</div>
+          <div class="influence-cta purple">→ 2x/month posts. Tag IHS, rural health, tribal health IT, and ArcticREACH themes.</div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /ihs panel -->
 
 </div><!-- /content -->
